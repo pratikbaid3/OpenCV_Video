@@ -1,0 +1,2 @@
+/training-data/s1
+/test-data/test1.jpg
