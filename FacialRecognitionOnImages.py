@@ -10,7 +10,6 @@ def detect_face(img):
         return None,None
     (x,y,w,h)=faces[0]
     return gray[y:y+w,x:x+h],faces[0]
-
 def draw_rectangle(img, rect):
     (x, y, w, h) = rect
     cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
