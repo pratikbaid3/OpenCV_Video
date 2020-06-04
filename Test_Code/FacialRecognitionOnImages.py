@@ -63,16 +63,6 @@ print("Tatal labels: ",len(labels))
 face_recognizer = cv2.face.LBPHFaceRecognizer_create()
 face_recognizer.train(faces, np.array(labels))
 print('Predicting images...')
-'''cap=cv2.VideoCapture(0)
-cap.set(3,640)
-cap.set(4,480)
-
-while True:
-    ret, img = cap.read()
-    cv2.imshow('video',predict(img))
-    k = cv2.waitKey(30) & 0xff
-    if k == 27: # press 'ESC' to quit
-        break'''
 test_img1 = cv2.imread("test-data/test1.jpg")
 test_img2 = cv2.imread("test-data/test2.jpg")
 predicted_img1 = predict(test_img1)
