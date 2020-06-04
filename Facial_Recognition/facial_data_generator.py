@@ -25,7 +25,7 @@ while True:
     cv2.imshow('Frame',detect_face(frame))
     if cv2.waitKey(100) & 0xff == ord('q'):
         break
-    elif sampleNum>=20:
+    elif sampleNum>=50:
         break
 
 cap.release()
